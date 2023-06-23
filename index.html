@@ -30,20 +30,24 @@
             <a href="" style="color: var(--primary_color)">Home</a>
           </div>
           <div class="nav_item">
-            <a href="" style="color: var(--primary_color)">About</a>
+            <a href="#intro_id"" style="color: var(--primary_color)">About</a>
           </div>
           <div class="nav_item">
-            <a href="" style="color: var(--primary_color)">Service</a>
+            <a href="#service_id" style="color: var(--primary_color)"
+              >Service</a
+            >
           </div>
           <div class="nav_item">
             <a href="" style="color: var(--primary_color)">Skills</a>
           </div>
           <div class="nav_item">
-            <a href="" style="color: var(--primary_color)">Contact</a>
+            <a href="#contact_id" style="color: var(--primary_color)"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
-      <div class="logo_wrapper">Serch</div>
+      <div class="search"  ><input placeholder="Search" style=" border: 0.5px solid #ccc;border-radius: 6px; padding:5px;margin-bottom:5px;max-width:100px"></input></div>
     </div>
     <div style="background: #e7e7e7">
       <div class="flex_container_1">
@@ -58,7 +62,7 @@
           >
             Anil Pahari
           </div>
-          <div class="intro" style="font-size: 14px">
+          <div id="intro_id" class="intro" style="font-size: 14px">
             <br />
             Welcome to my portfolio website! I'm thrilled to have this
             opportunity to <br />share my journey as a backend developer and
@@ -69,11 +73,15 @@
           </div>
           <br /><br />
           <div>
-            <button class="primary-btn">Contact Me</button>
+            <a href="#contact_id"
+              ><button class="primary-btn">Contact Me</button></a
+            >
           </div>
         </div>
 
-        <div class="image_css"></div>
+        <div class="image_css" style="position: relative;">
+          <!-- <div style="position: absolute;top:0;height:40px;width:40px;right:15px;background:var(--primary_color);border-radius:50%"></div> -->
+        </div>
       </div>
     </div>
     <br />
@@ -81,9 +89,13 @@
     <div
       style="max-width: 900px; margin: auto; text-align: center; padding: 20px"
     >
-      <div style="font-size: 25px; font-weight: bold; margin-bottom: 19px">
+      <div
+        id="service_id"
+        style="font-size: 25px; font-weight: bold; margin-bottom: 19px"
+      >
         What I do
       </div>
+
       <div
         class="flex_container"
         style="justify-content: space-around; gap: 20px"
@@ -166,6 +178,70 @@
           </a>
         </div>
       </div>
+    </div>
+    <div
+      class="contact_container"
+      style="
+        max-width: 900px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      "
+    >
+      <div class="flex_container" style="justify-content: space-between">
+        <div class="contact_picture"></div>
+        <div style="width: 500px">
+          <div id="contact_id" style="font-weight: bold; font-size: 30px">
+            Contact Me
+          </div>
+          <br />
+          <form action="./index.html" method="get">
+            <small> Name:</small><br />
+            <input type="text" name="name" /><br />
+            <small>Mobile number:</small><br />
+            <input type="text" name="number" /><br />
+            <small>Message:</small><br />
+            <textarea></textarea><br />
+
+            <button type="submit" class="primary-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div><br>
+    <div class="footer">
+      <div>
+        <div class="flex_container" style="gap: 60px">
+          <div class="nav_item">
+            <a href="" style="color: var(--primary_color)">Home</a>
+          </div>
+          <div class="nav_item">
+            <a href="#intro_id"" style="color: var(--primary_color)">About</a>
+          </div>
+          <div class="nav_item">
+            <a href="#service_id" style="color: var(--primary_color)"
+              >Service</a
+            >
+          </div>
+          <div class="nav_item">
+            <a href="" style="color: var(--primary_color)">Skills</a>
+          </div>
+          <div class="nav_item">
+            <a href="#contact_id" style="color: var(--primary_color)"
+              >Contact</a
+            >
+          </div>
+        </div><br><br>
+        <div class="footer_socials">
+          <a href="https://www.facebook.com/anilpahari54"><i class="fa-brands fa-facebook" style=" font-size: 35px;color: var(--secondary_color)"></i></a>
+          <a href="https://www.instagram.com/paharianil/"><i class="fa-brands fa-instagram" style=" font-size: 35px;color: var(--secondary_color)"></i></a>
+          <a href="https://github.com/anilpahari"><i class="fa-brands fa-github" style=" font-size: 35px;color: var(--secondary_color)"></i></a>
+          <a href="https://www.linkedin.com/in/anil-pahari-b38481235/"><i class="fa-brands fa-linkedin" style=" font-size: 35px;color: var(--secondary_color)"></i></a>
+  
+  
+        </div><br><br>
+      </div>
+      
+      @ Anil Pahari &copy;2023. All rights reserved.
     </div>
   </body>
 </html>

@@ -9,6 +9,7 @@ html,
 body {
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 .divider {
   height: 2px;
@@ -52,15 +53,6 @@ body {
   background-color: #e7e7e7;
 }
 
-.logo_wrapper {
-  border: 1px dashed var(--primary_color);
-  font-weight: bold;
-  font-size: 13px;
-  padding: 5px;
-  letter-spacing: 3px;
-  background-color: var(--secondary_color);
-  color: #fff;
-}
 .navbar {
   background: #ccc;
   padding: 20px;
@@ -83,6 +75,13 @@ body {
 }
 a {
   text-decoration: none;
+}
+input,
+textarea {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 .nav_item {
   font-weight: bold;
@@ -116,4 +115,26 @@ a {
   padding: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+.contact_picture {
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  background: url(./../images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.footer {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.footer_socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
 }
