@@ -60,6 +60,13 @@ body {
   padding: 20px;
   font-size: 14px;
 }
+.navbar_search {
+  display: flex;
+  justify-content: flex-end;
+  gap: 70px;
+  padding-right: 30px;
+  width: 550px;
+}
 .flex_container {
   display: flex;
   padding: 5px;
@@ -98,6 +105,10 @@ textarea {
   background: url(./../images/anil.jpg);
   background-size: cover;
 }
+.line-break {
+  display: block;
+}
+
 .primary-btn {
   cursor: pointer;
   margin-top: 10px;
